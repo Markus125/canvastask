@@ -1,3 +1,5 @@
+
+
 //lipp
 const canvas = document.getElementById("canvas");
 let ctx = canvas.getContext('2d');
@@ -16,33 +18,29 @@ ctx.stroke();
 
 //täheke
 
-ctx.beginPath();
-ctx.moveTo(300, 300); 
-ctx.lineTo(330, 315);
-ctx.lineTo(310, 295);
-ctx.lineTo(300, 315);
-ctx.lineTo(318, 300);
-ctx.lineTo(280, 50);
+ctx.beginPath(); 
+ctx.moveTo(100,55);
+ctx.lineTo(120,70);
+ctx.lineTo(110,50);
+ctx.lineTo(100,70);
+ctx.lineTo(120,55);
+ctx.lineTo(100,55);
 ctx.stroke();
 
 //Rõngas
 ctx.beginPath();
-ctx.strokeStyle = 'black';
-ctx.arc(100, 50, 30, 0, Math.PI/100*360);
-ctx.closePath();
+ctx.arc(110,100, 20, 0, 2 * Math.PI);
+ctx.lineWidth = 1;
+ctx.fillStyle = 'black'; 
+ctx.fill();
 ctx.stroke();
 
 ctx.beginPath();
-ctx.moveTo(100, 50);
-ctx.lineTo(85, 15); ctx.lineTo(115, 15);
-ctx.lineTo(100, 50);
-ctx.fillStyle();
-
-ctx.beginPath();
-ctx.lineWidth = 15;
-ctx.strokeStyle = 'white';
-ctx.arc(100, 50, 40, 0, Math.PI/100*360);
-ctx.closePath();
+ctx.lineWidth = 1;
+ctx.arc(110,100, 20, 5, 10);
+ctx.lineTo(110,100);
+ctx.lineTo(110,80);
+ctx.fillStyle = 'white'; 
+ctx.fill();
 ctx.stroke();
-
 
